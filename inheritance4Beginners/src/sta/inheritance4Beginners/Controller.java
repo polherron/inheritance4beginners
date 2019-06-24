@@ -6,7 +6,7 @@ public class Controller {
 
 		Pet myPet = new Pet(1, "Mickey", "21/06/2019", false, 300);
 		
-		Dog myDog = new Dog(2, "Pluto", "21/06/2019", false, 300);
+		Pet myDog = new Dog(2, "Pluto", "21/06/2019", false, 300, true);
 		
 		System.out.println(myPet.toString());
 		System.out.println(myDog.toString());

@@ -1,6 +1,22 @@
 package sta.inheritance4Beginners;
 
 public class Dog extends Pet {
+	
+	private boolean isGuardDog;
+
+	/**
+	 * @return the isGuardDog
+	 */
+	boolean isGuardDog() {
+		return isGuardDog;
+	}
+
+	/**
+	 * @param isGuardDog the isGuardDog to set
+	 */
+	void setGuardDog(boolean isGuardDog) {
+		this.isGuardDog = isGuardDog;
+	}
 
 	/**
 	 * 
@@ -17,9 +33,21 @@ public class Dog extends Pet {
 	 * @param licenceReq
 	 * @param purchasePrice
 	 */
-	public Dog(int petID, String name, String dob, boolean licenceReq, double purchasePrice) {
+	public Dog(int petID, String name, String dob, boolean licenceReq, double purchasePrice, boolean isGuardDog) {
 		super(petID, name, dob, licenceReq, purchasePrice);
-		// TODO Auto-generated constructor stub
+		
+		this.isGuardDog = isGuardDog;
+	}
+
+
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		String myString = super.toString() +  " Dog [isGuardDog=" + isGuardDog + "]";
+		return myString;
 	}
 
 	/**
