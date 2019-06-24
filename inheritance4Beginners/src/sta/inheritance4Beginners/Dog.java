@@ -3,6 +3,8 @@ package sta.inheritance4Beginners;
 public class Dog extends Pet {
 	
 	private boolean isGuardDog;
+	private boolean isDangerous;
+	
 
 	/**
 	 * @return the isGuardDog
